@@ -1,0 +1,30 @@
+﻿.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 30px;
+}
+
+.card-btn {
+    border: 0;
+    background: white;
+}
+
+.card-content {
+    border: 3px solid rebeccapurple;
+    border-radius: 10%;
+    display: block;
+}
+
+.card-img {
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    object-fit: cover;
+
+}
+
+.card-name {
+    color: purple;
+}

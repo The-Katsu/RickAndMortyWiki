@@ -1,0 +1,24 @@
+﻿@page "/character/{Id:int}"
+@using RickAndMortyWiki.Components
+
+
+<PageTitle>Character</PageTitle>
+
+@if (_character is null)
+{
+    <Spinner/>
+}
+else
+{
+    <div class="default-font text-center">
+        <img class="profile-image" src="@_character.Image" alt="img"/>
+        <br/>
+        <button class="profile-status">@_character.Status</button>
+        <h1 class="profile-name">@_character.Name</h1>
+        <h3>Gender: @_character.Gender</h3>
+        <h3>Species: @_character.Species</h3>
+        <h3>Type: @_character.Type</h3>
+        <h3>Origin: @_character.Origin.Name</h3>
+        <h3>Location: @_character.Location.Name</h3>
+    </div>
+}

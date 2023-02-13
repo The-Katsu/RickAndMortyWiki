@@ -1,0 +1,33 @@
+﻿.filter-container {
+    margin: 10px;
+}
+
+.filter{
+    text-align: center;
+    border: 2px solid purple;
+    border-radius: 10px;
+    background-color: white;
+    width: 15%;
+    font-weight: bolder;
+}
+
+.pagin {
+    margin: 10px;
+}
+
+.selected-button {
+    border: 2px solid rebeccapurple;
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+.separator {
+    border: 2px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 5px;
+}

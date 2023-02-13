@@ -96,6 +96,44 @@ a, .btn-link {
     inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
 }
 
-    .loading-progress-text:after {
-        content: var(--blazor-load-percentage-text, "Loading");
-    }
+.loading-progress-text:after {
+    content: var(--blazor-load-percentage-text, "Loading");
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold-weight {
+    font-weight: bold;
+}
+    
+.default-font {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text-container {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    text-align-all: center;
+    margin-top: 10%;
+}
+
+.custom-button {
+    border: 2px solid rebeccapurple;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+.input {
+    border: 2px solid purple;
+    font-weight: bolder;
+    text-align: center;
+    margin: 5px;
+    border-radius: 20px;
+    width: 40%;
+}
+

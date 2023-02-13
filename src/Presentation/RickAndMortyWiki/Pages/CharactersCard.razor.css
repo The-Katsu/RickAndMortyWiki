@@ -1,0 +1,18 @@
+﻿.profile-image {
+    border: 3px solid rebeccapurple;
+    border-radius: 50%;
+}
+
+.profile-name{
+    font-family: 'Get Schwifty';
+    color: rebeccapurple;
+}
+
+.profile-status {
+    background-color: white;
+    color: purple;
+    margin: 10px;
+    font-weight: bolder;
+    border: 3px solid purple;
+    border-radius: 50px;
+}

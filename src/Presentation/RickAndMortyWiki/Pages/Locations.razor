@@ -1,0 +1,43 @@
+﻿@page "/locations"
+@using RickAndMortyWiki.Components
+
+<PageTitle>Locations</PageTitle>
+
+@if (_location is null)
+{
+    <Spinner/>
+}
+else
+{
+    <div class="default-font text-center">
+        <h1>@_location.Name</h1>
+        <h3>Dimension: @_location.Dimension</h3>
+        <h3>Type: @_location.Type</h3>
+        <InputSelect class="loc-selector"
+                     ValueChanged="@((int id) => SelectionChanged(id))"
+                     ValueExpression="@(() => _selectedLocationId)"
+                     Value="@_selectedLocationId">
+            @foreach (var location in _locations)
+            {
+                <option value="@location.Id">@location.Name</option>
+            }
+        </InputSelect>
+        
+        <h3>Residents:</h3>
+            
+        <CardsWrapper Characters="_location.Residents" OnClick="OnCardClick"/>
+    </div>
+
+}
+
+@*blazor component (input selector)  doesn't see isolated css :)))*@
+<style>
+    .loc-selector{
+            border: 2px solid rebeccapurple;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bolder;
+            margin: 10px;
+            width: 20%;
+        }
+</style>

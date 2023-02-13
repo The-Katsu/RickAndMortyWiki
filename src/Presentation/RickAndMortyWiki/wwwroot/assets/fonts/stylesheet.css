@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('GetSchwifty-Regular.eot');
+    src: url('GetSchwifty-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GetSchwifty-Regular.woff2') format('woff2'),
+        url('GetSchwifty-Regular.woff') format('woff'),
+        url('GetSchwifty-Regular.ttf') format('truetype'),
+        url('GetSchwifty-Regular.svg#GetSchwifty-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
