@@ -1,0 +1,16 @@
+﻿.about {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.logo{
+    font-family: 'Get Schwifty';
+    font-size: 70px;
+    color: rebeccapurple;
+    margin: 50px;
+    font-weight: bold;
+}
+
+.links {
+    margin-top: 20%;
+}

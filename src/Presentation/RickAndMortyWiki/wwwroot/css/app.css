@@ -99,3 +99,15 @@ a, .btn-link {
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading");
     }
+
+.default-font {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text-container {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    text-align-all: center;
+    margin-top: 10%;
+}

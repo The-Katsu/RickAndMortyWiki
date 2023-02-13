@@ -1,0 +1,14 @@
+﻿@font-face {
+    font-family: 'get_schwifty';
+    src: url('assets/fonts/get_schwifty.eot');
+    src: url('assets/fonts/get_schwifty.eot') format('embedded-opentype'),
+    url('assets/fonts/get_schwifty.woff2') format('woff2'),
+    url('assets/fonts/get_schwifty.woff') format('woff'),
+    url('assets/fonts/get_schwifty.ttf') format('truetype'),
+    url('assets/fonts/get_schwifty.svg#get_schwifty') format('svg');
+}
+
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
