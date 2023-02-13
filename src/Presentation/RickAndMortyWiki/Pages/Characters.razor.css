@@ -9,6 +9,7 @@
     background-color: white;
     width: 15%;
     font-weight: bolder;
+    min-width: 120px;
 }
 
 .pagin {
