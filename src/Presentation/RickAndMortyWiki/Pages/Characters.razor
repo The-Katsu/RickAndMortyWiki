@@ -2,7 +2,7 @@
 @using RickAndMortyWiki.Components
 @using RickAndMortyWiki.Domain.GraphQl.Helpers
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Characters</PageTitle>
 
 <h1 class="text-center default-font">Characters</h1>
 
@@ -52,7 +52,7 @@
 }
 else
 {
-    <CardsWrapper Characters="_characters" OnClick="() => { }"/>
+    <CardsWrapper Characters="_characters" OnClick="OnCardClick"/>
     
     <div class="pagin text-center">
         @if (_displayedPages.Count > 1)

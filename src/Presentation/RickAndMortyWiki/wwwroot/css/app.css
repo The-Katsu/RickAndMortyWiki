@@ -103,6 +103,10 @@ a, .btn-link {
 .text-center {
     text-align: center;
 }
+
+.bold-weight {
+    font-weight: bold;
+}
     
 .default-font {
     font-family: 'Roboto Mono', monospace;
@@ -130,5 +134,6 @@ a, .btn-link {
     text-align: center;
     margin: 5px;
     border-radius: 20px;
-    width: 300px;
+    width: 40%;
 }
+

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Newtonsoft.Json;
 using RickAndMortyWiki.Application.Services.Interfaces;
 using RickAndMortyWiki.Domain.GraphQl.Helpers;
 using RickAndMortyWiki.Domain.Models;
@@ -8,6 +9,7 @@ namespace RickAndMortyWiki.Pages;
 public partial class Characters
 {
     [Inject] private ICharacterService CharacterService { get; set; } = null!;
+    [Inject] private NavigationManager Navigation { get; set; } = null!;
 
     private Page<Character> _page = null!;
     private List<Character> _characters = null!;
@@ -33,8 +35,14 @@ public partial class Characters
         StateHasChanged();
     }
 
-    private async Task Search() => await UpdatePage();
-    
+    private async Task Search()
+    {
+        var f = JsonConvert.SerializeObject(_filter);
+        var baseF = JsonConvert.SerializeObject(new Filter());
+        if (f != baseF)
+            await UpdatePage();
+    }
+
     private async Task Reset()
     {
         _filter = new Filter();
@@ -73,4 +81,5 @@ public partial class Characters
         if(!_displayedPages.Contains(1)) _displayedPages.Insert(0, 1);
         if(!_displayedPages.Contains(_maxPage)) _displayedPages.Add(_maxPage);
     }
+    private void OnCardClick(int id) => Navigation.NavigateTo("character/" + id);
 }
