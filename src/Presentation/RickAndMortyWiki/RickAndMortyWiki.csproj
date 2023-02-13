@@ -15,4 +15,8 @@
     <ProjectReference Include="..\..\Core\RickAndMortyWiki.Application\RickAndMortyWiki.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\assets" />
+  </ItemGroup>
+
 </Project>
