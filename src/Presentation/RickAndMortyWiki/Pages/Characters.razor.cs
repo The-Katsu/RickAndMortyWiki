@@ -72,7 +72,11 @@ public partial class Characters
 
     private void GeneratePagination()
     {
-        if (_maxPage <= 1) return;
+        if (_maxPage <= 1)
+        {
+            _displayedPages.Clear();
+            return;
+        }
         
         if (_maxPage <= 3) _displayedPages = Enumerable.Range(1, _maxPage).ToList();
         else if (_maxPage - _currentPage < 3) _displayedPages = Enumerable.Range(_maxPage - 3, 3).ToList();
