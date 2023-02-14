@@ -10,6 +10,8 @@
 .card-btn {
     border: 0;
     background: white;
+    flex: 0 0 calc(20% - (45px / 4));
+    min-width: 300px;
 }
 
 .card-content {
