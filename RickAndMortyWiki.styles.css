@@ -11,6 +11,8 @@
 .card-btn[b-k76942v5br] {
     border: 0;
     background: white;
+    flex: 0 0 calc(20% - (45px / 4));
+    min-width: 300px;
 }
 
 .card-content[b-k76942v5br] {
@@ -70,7 +72,7 @@
     background-color: white;
     width: 15%;
     font-weight: bolder;
-    min-width: 120px;
+    min-width: 150px;
 }
 
 .pagin[b-8bm8vmyltw] {
