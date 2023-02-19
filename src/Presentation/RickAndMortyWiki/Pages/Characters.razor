@@ -8,10 +8,10 @@
 
 <div class="search-bar default-font text-center">
     <input class="input" @bind-value="@_filter.Name" placeholder="Search for characters"/>
-    <button class="custom-button" onclick="@Search">
+    <button class="custom-button" @onclick="Search">
         <span class="oi oi-magnifying-glass"></span> Search
     </button>
-    <button class="custom-button" onclick="@Reset">
+    <button class="custom-button" @onclick="Reset">
             <span class="oi oi-loop-circular"></span> Reset
         </button>
     <button class="custom-button" @onclick="() => {_showFilters = !_showFilters;}">

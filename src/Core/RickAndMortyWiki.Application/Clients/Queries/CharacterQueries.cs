@@ -25,7 +25,7 @@ public static class CharacterQueries
                 }}
             }}"
         };
-    
+
     public static GraphQLRequest GetPage(int page, Filter filter) =>
         new()
         {

@@ -15,7 +15,7 @@ public sealed class EpisodeClient : IClient<Episode>
 
     public async Task<GraphQlSingleResponse<Episode>> GetById(int id)
     {
-        var response = 
+        var response =
             await _graphQlClient
                 .SendQueryAsync<GraphQlSingleResponse<Episode>>(EpisodeQueries.GetById(id));
         return response.Data;
@@ -23,7 +23,7 @@ public sealed class EpisodeClient : IClient<Episode>
 
     public async Task<GraphQlMultipleResponse<Episode>> GetPage(int page, Filter filter = null!)
     {
-        var response = 
+        var response =
             await _graphQlClient
                 .SendQueryAsync<GraphQlMultipleResponse<Episode>>(EpisodeQueries.GetPage(page));
         return response.Data;

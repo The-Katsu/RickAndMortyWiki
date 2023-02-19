@@ -40,12 +40,16 @@ public partial class Characters
         var f = JsonConvert.SerializeObject(_filter);
         var baseF = JsonConvert.SerializeObject(new Filter());
         if (f != baseF)
+        {
+            _currentPage = 1;
             await UpdatePage();
+        }
     }
 
     private async Task Reset()
     {
         _filter = new Filter();
+        _currentPage = 1;
         await UpdatePage();
     }
 

@@ -2,7 +2,7 @@
 
 namespace RickAndMortyWiki.Application.Clients.Queries;
 
-public class EpisodeQueries
+public static class EpisodeQueries
 {
     public static GraphQLRequest GetById(int id) =>
         new()
@@ -22,7 +22,7 @@ public class EpisodeQueries
                 }}
             }}"
         };
-    
+
     public static GraphQLRequest GetPage(int page) =>
         new()
         {

@@ -15,15 +15,15 @@ public sealed class LocationClient : IClient<Location>
 
     public async Task<GraphQlSingleResponse<Location>> GetById(int id)
     {
-        var response = 
+        var response =
             await _graphQlClient
                 .SendQueryAsync<GraphQlSingleResponse<Location>>(LocationQueries.GetById(id));
         return response.Data;
     }
 
-    public async Task<GraphQlMultipleResponse<Location>> GetPage(int page, Filter filter = null)
+    public async Task<GraphQlMultipleResponse<Location>> GetPage(int page, Filter filter = null!)
     {
-        var response = 
+        var response =
             await _graphQlClient
                 .SendQueryAsync<GraphQlMultipleResponse<Location>>(LocationQueries.GetPage(page));
         return response.Data;
